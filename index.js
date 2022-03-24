@@ -13,9 +13,9 @@ const cors = require("cors")
 
 dotenv.config()
 
-app.get('/', (req,res)=>{
-    res.send('this is backend server of ecommerce')
-})
+// app.get('/', (req,res)=>{
+//     res.send('this is backend server of ecommerce')
+// })
 
 
 mongoose.connect(process.env.MONGO_URL
