@@ -13,9 +13,7 @@ const cors = require("cors")
 
 dotenv.config()
 
-// app.get('/', (req,res)=>{
-//     res.send('this is backend server of ecommerce')
-// })
+
 
 
 mongoose.connect(process.env.MONGO_URL
@@ -33,6 +31,7 @@ app.use("/api/products", productRoute)
 app.use("/api/carts", cartRoute)
 app.use("/api/orders", orderRoute)
 app.use("/api/checkout", stripeRoute)
+
 
 
 
